@@ -1,0 +1,607 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fcfcfc;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ШАПКА */
+.site-header {
+    background-color: #fff;
+    border-bottom: 2px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-link {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #0056b3;
+}
+
+.main-nav a {
+    margin: 0 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+.main-nav a:hover, .main-nav a.active {
+    color: #00a2ed;
+}
+
+.btn-login-header {
+    background-color: #00a2ed;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 25px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* ОСНОВНОЙ КОНТЕНТ */
+.container {
+    flex: 1;
+    padding: 30px 40px;
+}
+
+/* БАЗА ЗНАНИЙ (ИНДЕКС) */
+.hero-section {
+    margin-bottom: 30px;
+}
+
+.hero-section h1 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.search-box input {
+    width: 50%;
+    padding: 10px;
+    border: 3px solid #999;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.article-card {
+    border: 3px solid #999;
+    padding: 30px;
+    background: #fff;
+}
+
+/* АВТОРИЗАЦИЯ */
+.auth-card {
+    width: 400px;
+    margin: 40px auto;
+    border: 3px solid #999;
+    padding: 30px;
+    background: #fff;
+}
+
+.auth-card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #999;
+    font-size: 14px;
+}
+
+.btn-action {
+    width: 100%;
+    background-color: #00a2ed;
+    color: white;
+    padding: 12px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+
+.auth-links {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.auth-links a {
+    color: #00a2ed;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.demo-nav-box {
+    margin-top: 20px;
+    padding: 15px;
+    background: #e1f5fe;
+    border: 1px dashed #00a2ed;
+}
+
+.demo-nav-box p {
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.demo-btn {
+    display: inline-block;
+    padding: 5px 10px;
+    background: #0056b3;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/* МАКЕТ ПАНЕЛИ С САЙДБАРОМ */
+.dashboard-layout {
+    display: flex;
+    gap: 30px;
+}
+
+.sidebar {
+    width: 220px;
+    border-right: 1px solid #ddd;
+}
+
+.sidebar-nav a {
+    display: block;
+    padding: 12px 0;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #eee;
+}
+
+.sidebar-nav a.active {
+    color: #00a2ed;
+    border-left: 4px solid #00a2ed;
+    padding-left: 8px;
+}
+
+.dashboard-content {
+    flex: 1;
+}
+
+/* МЕДИЦИНСКИЕ БЛОКИ (СИНЯЯ СТРУКТУРА) */
+.card-blue {
+    border: 2px solid #ccc;
+    background: #fff;
+    margin-bottom: 20px;
+}
+
+.card-header-blue {
+    background-color: #00a2ed;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.header-with-filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.row-layout {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.avatar-block {
+    background-color: #00a2ed;
+    border-radius: 8px;
+    width: 140px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stickman {
+    font-size: 50px;
+}
+
+.inputs-block {
+    flex: 1;
+}
+
+.input-row {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.input-row div {
+    flex: 1;
+}
+
+.input-single {
+    margin-top: 15px;
+    width: 50%;
+}
+
+input[type="number"], input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #aaa;
+    font-size: 14px;
+}
+
+.spec-inputs {
+    border-top: 1px dashed #ccc;
+    padding-top: 20px;
+}
+
+.btn-save-metrics {
+    width: 100%;
+    background-color: #00a2ed;
+    color: white;
+    padding: 15px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ТАБЛИЦЫ */
+.metrics-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.metrics-table th, .metrics-table td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+}
+
+.metrics-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.pagination {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    background: #fff;
+    border-top: 1px solid #ccc;
+}
+
+.pagination button {
+    padding: 5px 12px;
+    border: 1px solid #ccc;
+    background: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.pagination button.active {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* ЗАГЛУШКИ ГРАФИКОВ */
+.chart-container-mock {
+    display: flex;
+    gap: 20px;
+    border-bottom: 2px solid #ccc;
+    background: #fff;
+}
+
+.mock-chart {
+    flex: 1;
+    border: 1px solid #bbb;
+    padding: 15px;
+    background: #fafafa;
+}
+
+.chart-line-box {
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+    color: #555;
+    font-weight: bold;
+}
+
+.graph-filters button {
+    background: #0056b3;
+    color: white;
+    border: none;
+    padding: 5px 12px;
+    margin-left: 5px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.graph-filters button.active {
+    background-color: #002d62;
+}
+
+/* ПАНЕЛЬ ВРАЧА */
+.alert-panel {
+    background-color: #ff4d4d;
+    padding: 15px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.alert-panel h3 {
+    margin-bottom: 5px;
+}
+
+.alert-item {
+    background: rgba(0,0,0,0.15);
+    padding: 10px;
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.patients-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.patient-card {
+    border: 2px solid #aaa;
+    border-radius: 12px;
+    padding: 20px;
+    background: #fff;
+}
+
+.empty-card {
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    border-style: dashed;
+}
+
+.badge {
+    padding: 3px 8px;
+    font-size: 12px;
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.badge-ok { background-color: #28a745; }
+.badge-metrics { background-color: #17a2b8; display: inline-block; }
+
+.patient-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.btn-card-action {
+    background: #00a2ed;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* ПРОФИЛЬ ПАЦИЕНТА У ВРАЧА */
+.patient-profile-layout {
+    display: flex;
+    gap: 25px;
+}
+
+.left-charts-area {
+    flex: 3;
+}
+
+.right-info-area {
+    flex: 1;
+}
+
+.file-attachments {
+    margin-top: 10px;
+}
+
+.file-item {
+    background: #e9ecef;
+    padding: 8px;
+    margin-top: 8px;
+    font-size: 13px;
+    border-left: 4px solid #00a2ed;
+    font-weight: bold;
+}
+
+.btn-chat-open {
+    display: block;
+    width: 100%;
+    background: #9c27b0;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-weight: bold;
+    margin-top: 25px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-back-to-list {
+    display: block;
+    width: 100%;
+    background: #00a2ed;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* ИНТЕРФЕЙС ЧАТА */
+.messenger-box {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.chat-messages-box {
+    height: 350px;
+    overflow-y: auto;
+    padding: 20px;
+    background: #f7f9fa;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.msg {
+    max-width: 75%;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.incoming {
+    background: #00a2ed;
+    color: white;
+    align-self: flex-start;
+}
+
+.outgoing {
+    background: #e1f5fe;
+    color: #333;
+    align-self: flex-end;
+    border: 1px solid #b3e5fc;
+}
+
+.msg-author {
+    font-size: 11px;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.msg-time {
+    font-size: 10px;
+    display: block;
+    text-align: right;
+    margin-top: 5px;
+    opacity: 0.8;
+}
+
+.chat-input-row {
+    display: flex;
+    border-top: 1px solid #ccc;
+    padding: 12px;
+    background: #fff;
+    align-items: center;
+}
+
+.chat-input-row input {
+    flex: 1;
+    padding: 10px;
+    margin: 0 12px;
+    font-size: 14px;
+}
+
+.btn-attach-file {
+    background: #eee;
+    border: 1px solid #ccc;
+    padding: 9px 14px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-send-message {
+    background: #00a2ed;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ФУТЕР */
+.site-footer {
+    background: #fff;
+    border-top: 2px solid #ccc;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-top: auto;
+}
+
+.circles {
+    letter-spacing: 5px;
+    color: #999;
+}
