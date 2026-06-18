@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Карточка пациента - Иванов А.В.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+    <a href="index.html" class="logo-link">💙 CardioMonitor</a>
+    <div class="auth-zone">
+        <span style="font-weight:bold; margin-right:15px;">🩺 Врач: Лечарова М.Н.</span>
+    </div>
+</header>
+
+<main class="container patient-profile-layout">
+    <div class="left-charts-area">
+        <h2>МЕДИЦИНСКАЯ ИСТОРИЯ И ГРАФИКИ</h2>
+        <div class="card-blue">
+            <div class="card-header-blue header-with-filters">
+                <span>📊 ГРАФИКИ ДИНАМИКИ ПАЦИЕНТА</span>
+                <div class="graph-filters">
+                    <button>ДЕНЬ</button> <button class="active">НЕДЕЛЯ</button> <button>МЕСЯЦ</button>
+                </div>
+            </div>
+            <div class="card-body chart-container-mock">
+                <div class="mock-chart">
+                    <h4>Артериальное давление</h4>
+                    <div class="chart-line-box">📈 [График давления Иванова А.В.]</div>
+                </div>
+                <div class="mock-chart">
+                    <h4>Пульс</h4>
+                    <div class="chart-line-box">📊 [ЧСС тренд Иванова А.В.]</div>
+                </div>
+            </div>
+
+            <div class="card-header-blue text-left">🚶 ТАБЛИЦА ИСТОРИИ ИЗМЕРЕНИЙ</div>
+            <div class="card-body no-padding">
+                <table class="metrics-table">
+                    <thead>
+                    <tr>
+                        <th>Дата и Время</th>
+                        <th>Давление</th>
+                        <th>Пульс</th>
+                        <th>Вес</th>
+                        <th>Симптомы</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr><td>18.06.2026 14:20</td><td>145 / 95</td><td>92</td><td>75</td><td>Головная боль в затылке</td></tr>
+                    <tr><td>17.06.2026 09:15</td><td>135 / 85</td><td>81</td><td>74</td><td>Легкая слабость</td></tr>
+                    <tr><td>16.06.2026 20:40</td><td>120 / 80</td><td>72</td><td>74</td><td>Нет симптомов</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="right-info-area">
+        <div class="card-blue">
+            <div class="card-header-blue text-left">👤 КРАТКАЯ АНКЕТА</div>
+            <div class="card-body">
+                <p style="margin-bottom:8px;"><strong>ФИО:</strong> Иванов А. В.</p>
+                <p style="margin-bottom:8px;"><strong>Возраст:</strong> 58 лет</p>
+                <p style="margin-bottom:8px;"><strong>Диагноз:</strong> Артериальная гипертензия</p>
+
+                <h4 style="margin: 15px 0 5px; border-bottom:1px dashed #ccc; padding-bottom:5px;">📎 ФАЙЛЫ</h4>
+                <div class="file-attachments">
+                    <div class="file-item">📄 Выписка_2026.pdf</div>
+                    <div class="file-item">📄 Экг_скан.png</div>
+                </div>
+
+                <a href="chat.html" class="btn-chat-open">ОТКРЫТЬ ЧАТ С ПАЦИЕНТОМ</a>
+                <a href="doctor_panel.html" class="btn-back-to-list">НАЗАД К СПИСКУ</a>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>

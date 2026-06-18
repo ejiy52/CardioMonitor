@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Панель врача - CardioMonitor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+    <a href="index.html" class="logo-link">💙 CardioMonitor</a>
+    <div class="auth-zone">
+        <span style="font-weight:bold; margin-right:15px;">🩺 Врач: Лечарова М.Н.</span>
+        <a href="index.html" style="color:red; font-weight:bold; text-decoration:none;">Выйти</a>
+    </div>
+</header>
+
+<main class="container">
+    <div class="alert-panel">
+        <h3>ПРОФЕССИОНАЛЬНАЯ ПАНЕЛЬ ВРАЧА</h3>
+        <div class="alert-item" style="background:#ff3333;">⚠️ СРОЧНО! Иванов А.В. - Давление > 140/90 (Критическое)</div>
+        <div class="alert-item" style="background:#ff9900;">⚠️ СРОЧНО! Петров П.С. - Пульс > 100 (Экстренное)</div>
+    </div>
+
+    <div class="card-blue">
+        <div class="card-header-blue text-left">👥 СПИСОК МОИХ ПАЦИЕНТОВ (ВСЕГО: 12)</div>
+        <div class="card-body patients-grid">
+
+            <div class="patient-card">
+                <h4>ФИО: Иванов А. В.</h4>
+                <p>Статус: <span class="badge" style="background:#dc3545;">⚠️ Алерт</span></p>
+                <p>Последний замер: <strong>Сегодня 14:20</strong></p>
+                <div class="patient-card-footer">
+                    <span class="badge badge-metrics">🫀 145/95, 92 уд/м</span>
+                    <a href="patient_card.html" class="btn-card-action">Открыть карточку</a>
+                </div>
+            </div>
+
+            <div class="patient-card">
+                <h4>ФИО: Петров П. С.</h4>
+                <p>Статус: <span class="badge" style="background:#ffc107; color:#333;">⚠️ Экстренно</span></p>
+                <p>Последний замер: <strong>Вчера 18:05</strong></p>
+                <div class="patient-card-footer">
+                    <span class="badge badge-metrics">🫀 120/80, 102 уд/м</span>
+                    <a href="#" class="btn-card-action">Открыть карточку</a>
+                </div>
+            </div>
+
+            <div class="patient-card"><h4 style="color:#aaa;">Пациент №3</h4><div class="patient-card-footer"><a href="#" class="btn-card-action" style="background:#ccc;">Открыть</a></div></div>
+            <div class="patient-card"><h4 style="color:#aaa;">Пациент №4</h4><div class="patient-card-footer"><a href="#" class="btn-card-action" style="background:#ccc;">Открыть</a></div></div>
+            <div class="patient-card"><h4 style="color:#aaa;">Пациент №5</h4><div class="patient-card-footer"><a href="#" class="btn-card-action" style="background:#ccc;">Открыть</a></div></div>
+            <div class="patient-card"><h4 style="color:#aaa;">Пациент №6</h4><div class="patient-card-footer"><a href="#" class="btn-card-action" style="background:#ccc;">Открыть</a></div></div>
+
+        </div>
+        <div class="pagination">
+            <button>&lt;</button> <button class="active">1</button> <button>2</button> <button>3</button> <button>&gt;</button>
+        </div>
+    </div>
+</main>
+</body>
+</html>
