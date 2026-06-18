@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Ввод показателей - Пациент</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+    <a href="index.html" class="logo-link">💙 CardioMonitor</a>
+    <div class="auth-zone">
+        <span style="font-weight:bold; margin-right:15px;">👤 Пациент: Иванов А.В.</span>
+        <a href="index.html" style="color:red; font-weight:bold; text-decoration:none;">Выйти</a>
+    </div>
+</header>
+
+<main class="container dashboard-layout">
+    <aside class="sidebar">
+        <nav class="sidebar-nav">
+            <a href="index.html">Главная база знаний</a>
+            <a href="patient_input.html" class="active">Мои показатели</a>
+            <a href="patient_history.html">История и графики</a>
+        </nav>
+    </aside>
+
+    <section class="dashboard-content">
+        <h2>ЛИЧНЫЙ КАБИНЕТ ПАЦИЕНТА</h2>
+        <div class="card-blue">
+            <div class="card-header-blue">ТЕКУЩИЕ ПОКАЗАТЕЛИ СЕРДЦА</div>
+            <div class="card-body row-layout">
+                <div class="avatar-block">
+                    <div class="stickman">👤❤️</div>
+                </div>
+                <div class="inputs-block">
+                    <h3>АРТЕРИАЛЬНОЕ ДАВЛЕНИЕ</h3>
+                    <div class="input-row">
+                        <div>
+                            <label>Систолическое (мм рт. ст.)</label>
+                            <input type="number" placeholder="например, 120" id="sys">
+                        </div>
+                        <div>
+                            <label>Диастолическое (мм рт. ст.)</label>
+                            <input type="number" placeholder="например, 80" id="dia">
+                        </div>
+                    </div>
+                    <div class="input-single">
+                        <label>ПУЛЬС (уд/мин)</label>
+                        <input type="number" placeholder="например, 72" id="pulse">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-header-blue text-left">ОБЩЕЕ САМОЧУВСТВИЕ</div>
+            <div class="card-body row-layout spec-inputs">
+                <div style="width: 20%;">
+                    <label>ВЕС (кг)</label>
+                    <input type="number" placeholder="70">
+                </div>
+                <div style="flex-grow: 1;">
+                    <label>ОПИСАНИЕ СИМПТОМОВ</label>
+                    <input type="text" placeholder="Опишите ваше самочувствие...">
+                </div>
+            </div>
+            <button class="btn-save-metrics" onclick="alert('Показатели успешно сохранены в систему!')">СОХРАНИТЬ ПОКАЗАТЕЛИ</button>
+        </div>
+    </section>
+</main>
+</body>
+</html>

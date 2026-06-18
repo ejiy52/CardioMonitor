@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>История показателей - Пациент</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+    <a href="index.html" class="logo-link">💙 CardioMonitor</a>
+    <div class="auth-zone">
+        <span style="font-weight:bold; margin-right:15px;">👤 Пациент: Иванов А.В.</span>
+        <a href="index.html" style="color:red; font-weight:bold; text-decoration:none;">Выйти</a>
+    </div>
+</header>
+
+<main class="container dashboard-layout">
+    <aside class="sidebar">
+        <nav class="sidebar-nav">
+            <a href="index.html">Главная база знаний</a>
+            <a href="patient_input.html">Мои показатели</a>
+            <a href="patient_history.html" class="active">История и графики</a>
+        </nav>
+    </aside>
+
+    <section class="dashboard-content">
+        <h2>ЛИЧНЫЙ КАБИНЕТ ПАЦИЕНТА</h2>
+        <div class="card-blue">
+            <div class="card-header-blue header-with-filters">
+                <span>📊 ГРАФИКИ ДИНАМИКИ</span>
+                <div class="graph-filters">
+                    <button>ДЕНЬ</button>
+                    <button class="active">НЕДЕЛЯ</button>
+                    <button>МЕСЯЦ</button>
+                </div>
+            </div>
+            <div class="card-body chart-container-mock">
+                <div class="mock-chart">
+                    <h4>Артериальное давление (мм рт. ст.)</h4>
+                    <div class="chart-line-box">📈 [График давления тренда]</div>
+                </div>
+                <div class="mock-chart">
+                    <h4>Пульс (уд/мин)</h4>
+                    <div class="chart-line-box">📊 [График ЧСС тренда]</div>
+                </div>
+            </div>
+
+            <div class="card-header-blue text-left">🚶 ТАБЛИЦА ИСТОРИИ ИЗМЕРЕНИЙ</div>
+            <div class="card-body no-padding">
+                <table class="metrics-table">
+                    <thead>
+                    <tr>
+                        <th>Дата и Время</th>
+                        <th>Давление</th>
+                        <th>Пульс</th>
+                        <th>Вес</th>
+                        <th>Симптомы</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr><td>18.06.2026 14:20</td><td>120 / 80</td><td>72</td><td>74</td><td>Отличное самочувствие</td></tr>
+                    <tr><td>17.06.2026 09:15</td><td>135 / 85</td><td>81</td><td>74</td><td>Легкая слабость с утра</td></tr>
+                    <tr><td>16.06.2026 20:40</td><td>118 / 78</td><td>68</td><td>74.5</td><td>Без симптомов</td></tr>
+                    <tr><td>15.06.2026 11:00</td><td>145 / 95</td><td>92</td><td>75</td><td>Головная боль в затылке</td></tr>
+                    <tr><td>14.06.2026 10:30</td><td>125 / 82</td><td>75</td><td>75</td><td>Нормальное состояние</td></tr>
+                    </tbody>
+                </table>
+                <div class="pagination">
+                    <button>&lt;</button> <button class="active">1</button> <button>2</button> <button>&gt;</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>
