@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Чат с пациентом - CardioMonitor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+    <a href="index.html" class="logo-link">💙 CardioMonitor</a>
+    <nav class="main-nav">
+        <a href="doctor_panel.html">Вернуться в панель врача</a>
+    </nav>
+</header>
+
+<main class="container">
+    <h2>ЗАЩИЩЕННЫЙ КОММУНИКАЦИОННЫЙ ЧАТ</h2>
+    <div class="card-blue messenger-box">
+        <div class="card-header-blue text-left">Диалог: Иванов Александр (Пациент)</div>
+
+        <div class="chat-messages-box" id="chatBox">
+            <div class="msg incoming">
+                <span class="msg-author">Иванов (Пациент):</span>
+                <p>Здравствуйте, доктор! Поднялось давление, выпил назначенную таблетку Каптоприла.</p>
+                <span class="msg-time">Сегодня 14:25 ✔️✔️</span>
+            </div>
+            <div class="msg outgoing">
+                <span class="msg-author">Вы (Врач):</span>
+                <p>Здравствуйте. Ложитесь, перемеряйте показатели через 30 минут и запишите в дневник.</p>
+                <span class="msg-time">Сегодня 14:30 ✔️✔️</span>
+            </div>
+        </div>
+
+        <div class="chat-input-row">
+            <button class="btn-attach-file" onclick="alert('Файл ЭКГ успешно прикреплен к сообщению!')">📎</button>
+            <input type="text" id="msgInput" placeholder="Введите ваше сообщение...">
+            <button class="btn-send-message" onclick="sendMessage()">ОТПРАВИТЬ</button>
+        </div>
+    </div>
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
